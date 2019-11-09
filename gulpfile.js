@@ -120,3 +120,8 @@ gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
 });
+
+gulp.task('copy', function() {
+  return gulp.src(['./**/*','!./**/*.json','!./node_modules/**/*', '!./public/**/*'])
+      .pipe(gulp.dest('public'));
+});
