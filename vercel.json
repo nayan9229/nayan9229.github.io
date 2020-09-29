@@ -1,0 +1,5 @@
+{
+  "routes": [
+    { "src": "/about", "dest": "https://awesomeblog9.vercel.app" }
+  ]
+}
